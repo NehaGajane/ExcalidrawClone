@@ -1,0 +1,445 @@
+@font-face {
+    font-family: "Virgil 3 YOFF";
+    src: url("https://db.onlinewebfonts.com/t/cc6ba99a1d8620c4bfc84d252404e42a.eot");
+    src: url("https://db.onlinewebfonts.com/t/cc6ba99a1d8620c4bfc84d252404e42a.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/cc6ba99a1d8620c4bfc84d252404e42a.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/cc6ba99a1d8620c4bfc84d252404e42a.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/cc6ba99a1d8620c4bfc84d252404e42a.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/cc6ba99a1d8620c4bfc84d252404e42a.svg#Virgil 3 YOFF")format("svg");
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    position: fixed;
+    height: 80px;
+    display: flex;
+    background-color: transparent;
+    width: 100%;
+    background: transparent;
+}
+
+#menu {
+    padding: 17px;
+    width: 150px;
+    height: 150px;
+}
+
+.menu-btn {
+    border-radius: 20%;
+    border: none;
+    height: 43px;
+    width: 43px;
+    background-color: white;
+    color:rgb(173, 173, 173);
+    border: 0.5px solid rgb(221, 221, 221);
+}
+
+.menu-btn>svg {
+    height: 25px;
+}
+
+.menu-btn:active { 
+    border: 0.5px solid blue;
+}
+#menuItems {
+    position:absolute;
+    padding: 5px;
+    z-index: 2;
+    height: 550px;
+    overflow: auto;
+    border-radius: 10px;
+    width: 250px;
+    border: none;
+    margin: 65px 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    align-items: center;
+    display: none;
+}
+
+.menuItem {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.listItem:hover {
+    background-color: rgb(224,223,255);;
+}
+
+.listItem {
+    height: 2rem;
+    width: 221px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    list-style: none;
+    margin-left: -30px;
+}
+
+.itemIcon> svg {
+    height: 20px;
+    float: left;
+    margin-top: 2px;
+    flex: 1;
+    background-color: transparent;
+}
+
+.itemName {
+    font-size: 15px;
+    margin: -22px 25px;
+    background-color: transparent;
+}
+
+.hori-line {
+    border: 0.5px solid rgb(241, 241, 241);
+    margin: 0 10px;
+}
+
+.language-selector {
+    border: 0.5px solid rgb(241, 241, 241);
+    height: 2.2rem;
+    width: 215px;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+
+.language-op {
+    height: 2.2rem;
+    width: 221px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    list-style: none;
+    margin-left: -30px;
+}
+
+.top-picks>button {
+    height: 10px;
+    padding: 12px;
+    border: 2px solid rgb(241, 241, 241);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.ver-line {
+    border: 0.5px solid rgb(241, 241, 241);
+    height: 30px;
+    width: 0;
+    float: right;
+    margin-right: 40px;
+    margin-top: -38px;
+}
+
+#color-picker>button {
+    height: 15px;
+    width: 15px;
+    padding: 15px;
+    border: 0.5px solid rgb(241, 241, 241);
+    float: right;
+    margin-top: -40px;
+    border-radius: 5px;
+}
+
+.bg-selector-heading {
+    font-size: 12px;
+}
+.bg-selector-heading:hover {
+    background-color: transparent;
+}
+
+#color-picker:hover {
+    background-color: transparent;
+}
+
+.bg-picker {
+    height: 2.2rem;
+    width: 221px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    list-style: none;
+    margin-left: -30px;
+}
+
+.hex-colorcode {
+    list-style: none;
+}
+
+#excaliPlus {
+    color: rgb(255, 0, 140);
+}
+
+#toolbar {
+    height: 45px;
+    width: 500px;
+    margin: 17px;
+    padding: 5px;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+}
+
+.toolbar-btn {
+    height: 35px;
+    width: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.toolbar-btn>svg {
+    color: rgb(61, 61, 61);
+}
+
+.toolbar-btn:hover {
+    background-color: rgb(236,236,244);
+}
+.toolbar-ver-line {
+    border: 0.5px solid rgb(241, 241, 241);
+    margin: 5px;
+}
+
+.live-collab-btn {
+    border-radius: 20%;
+    border: none;
+    height: 43px;
+    width: 43px;
+    background-color: rgb(105,101,219);
+    color:rgb(255, 255, 255);
+    border: 0.5px solid rgb(221, 221, 221);
+}
+
+.live-collab-btn:hover {
+    background-color: rgb(87, 84, 185);
+}
+
+.live-collab-btn>svg {
+    height: 20px;
+}
+
+.library-btn {
+    border-radius: 10px;
+    border: none;
+    height: 43px;
+    width: 90px;
+    background-color: transparent;
+    color:rgb(100, 100, 100);
+    border: 0.5px solid rgb(221, 221, 221);
+    margin-top: -15px;
+    font-size: small;
+}
+
+.library-btn>svg {
+    height: 15px;
+}
+
+.library-btn:active {
+    border: 1px solid blue;
+}
+
+.live-collab {
+    margin: 17px 17px 0 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    margin: 0 17px 17px 17px;
+    width: 97.5%;
+}
+
+.resize-canvas {
+    display: flex;
+}
+
+.zoom-out>button {
+    border-radius: 10px 0 0 10px;
+    border: none;
+    height: 43px;
+    width: 43px;
+    background-color: transparent;
+    color:rgb(100, 100, 100);
+    border: 0.5px solid rgb(221, 221, 221);
+    /* margin-top: -15px; */
+    font-size: small;
+}
+
+.reset-canvas>button {
+    /* border-radius: 10px; */
+    border: none;
+    height: 43px;
+    width: 90px;
+    background-color: transparent;
+    color:rgb(100, 100, 100);
+    border: 0.5px solid rgb(221, 221, 221);
+    /* margin: 0 -1px; */
+    font-size: small;
+}
+
+.zoom-in>button {
+    border-radius: 0 10px 10px 0;
+    border: none;
+    height: 43px;
+    width: 43px;
+    background-color: transparent;
+    color:rgb(100, 100, 100);
+    border: 0.5px solid rgb(221, 221, 221);
+    font-size: small;
+}
+
+.zoom-in>button:active {
+    border: 1px solid blue;
+}
+
+.zoom-out>button:active {
+    border: 1px solid blue;
+}
+
+.reset-canvas>button:active {
+    border: 1px solid blue;
+}
+
+.undo-redo {
+    margin: 0 17px;
+}
+
+.undo>button {
+    border-radius: 10px 0 0 10px;
+    border: none;
+    height: 43px;
+    width: 43px;
+    background-color: transparent;
+    color:rgb(100, 100, 100);
+    border: 0.5px solid rgb(221, 221, 221);
+    font-size: small;
+    /* margin-right: -1px; */
+}
+
+.redo>button {
+    border-radius: 0 10px 10px 0;
+    border: none;
+    height: 43px;
+    width: 43px;
+    background-color: transparent;
+    color:rgb(100, 100, 100);
+    border: 0.5px solid rgb(221, 221, 221);
+    font-size: small;
+}
+
+.redo>button:active {
+    border: 1px solid blue;
+}
+
+.undo>button:active {
+    border: 1px solid blue;
+}
+
+.redo>button>svg {
+    height: 25px;
+}
+
+.undo>button>svg {
+    height: 25px;
+}
+
+.encrypt-help {
+    position: absolute;
+    right: 0;
+}
+
+.encrypt-notice>button {
+    border: none;
+    height: 43px;
+    width: 43px;
+    background-color: transparent;
+    color:rgb(100, 100, 100);
+    border: none;
+    font-size: small;
+    margin-right: 12px;
+}
+
+.encrypt-notice>button>svg {
+    height: 20px;
+    color: rgb(105,101,219);
+}
+
+.help>button {
+    border-radius: 10px;
+    border: none;
+    height: 43px;
+    width: 43px;
+    background-color: transparent;
+    color:rgb(100, 100, 100);
+    border: 0.5px solid rgb(221, 221, 221);
+    font-size: small;
+}
+
+.help>button:active {
+    border: 1px solid blue;
+}
+
+.help>button>svg {
+    height: 20px;
+}
+
+#logo {
+    position: fixed;
+    height: fit-content;
+    margin: 15% 32%;
+    /* display: block; */
+}
+
+#logo>svg {
+    height: 50px;
+    color: rgb(105,101,219);
+}
+
+.center-menu {
+    position: absolute;
+    height: fit-content;
+    margin: 15% 28%;
+}
+
+.center-menu-option {
+    /* background-color: purple; */
+    width: 250px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    height: 50px;
+    /* align-content: center; */
+    box-shadow: rgba(127, 127, 127, 0.16) 0px 1px 4px;
+    font-size: small;
+    padding: 5px;
+}
+
+.center-menu-option:hover {
+    background-color: rgb(237, 237, 237);
+    cursor: pointer;
+}
+
+.center-menu-option>button {
+    border: none;
+    /* height: 46px; */
+    margin: 5px;
+    background-color: transparent;
+}
+
+.center-menu-option>button>svg {
+    height: 20px;
+}
+
+canvas {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(127, 138, 147);
+}
